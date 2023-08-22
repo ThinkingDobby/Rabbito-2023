@@ -2,13 +2,13 @@
 @import "./reset";
 @import "./color";
 @import "./font";
-@import "./base";
 
 /* Component */
 
 /* Animation */
 
 /* Screen */
+@import "./screen/common";  // 공통
 @import "./screen/index";
 @import "./screen/intro";
 @import "./screen/works";
