@@ -1,4 +1,16 @@
-body {
-    background-color: #191919;
-    color: #fefefe;
-}
+/* Base */
+@import "./reset";
+@import "./color";
+@import "./font";
+@import "./base";
+
+/* Component */
+
+/* Animation */
+
+/* Screen */
+@import "./screen/index";
+@import "./screen/intro";
+@import "./screen/works";
+@import "./screen/career";
+@import "./screen/album";
