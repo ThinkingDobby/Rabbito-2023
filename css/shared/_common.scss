@@ -1,0 +1,35 @@
+/* Basic Setting */
+::selection {
+    background-color: $gray1;
+    color: $white;
+}
+
+/* Background */
+.screenBackground {
+    background-color: $black;
+    width: 100%;
+    height: 100%;
+}
+
+/* Text Type */
+.text {
+    font-family: $mainFont;
+    font-size: 16px;
+    color: $white;
+}
+
+.subTitle {
+    @extend .text;
+    font-size: 20px;
+}
+
+/* Property */
+.unSelectable {
+    user-select: none;  // 표준
+    -webkit-user-select: none;  // Safari, Chrome, Opera
+    -moz-user-select: none; // Firefox
+    -ms-user-select: none;  // IE 10+
+    
+    -webkit-user-drag: none;
+
+}

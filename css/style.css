@@ -53,15 +53,52 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 /* Component */
-/* Animation */
-/* Screen */
+/* Basic Setting */
+::-moz-selection {
+  background-color: #676767;
+  color: #FEFEFE;
+}
+::selection {
+  background-color: #676767;
+  color: #FEFEFE;
+}
+
+/* Background */
 .screenBackground {
   background-color: #191919;
   width: 100%;
   height: 100%;
 }
 
+/* Text Type */
+.text, .subTitle {
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  color: #FEFEFE;
+}
+
+.subTitle {
+  font-size: 20px;
+}
+
+/* Property */
+.unSelectable {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Animation */
+/* Screen */
 body {
   width: 100%;
   height: 100%;
@@ -71,8 +108,28 @@ body .screenBackground {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-body .screenBackground .logo {
-  width: 278px;
-  height: 79px;
+body .screenBackground .centerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .screenBackground .centerBox .logo {
+  width: 14vw;
+  margin-top: 10vh;
+  margin-bottom: 13vh;
+}
+body .screenBackground .centerBox .logo:hover {
+  cursor: pointer;
+}
+body .screenBackground .centerBox a {
+  margin-left: 70px;
+  margin-right: 70px;
+  text-decoration: none;
+}
+body .screenBackground .centerBox a:hover {
+  text-decoration: underline;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

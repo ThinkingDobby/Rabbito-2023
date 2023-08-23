@@ -4,13 +4,31 @@ body {
     position: absolute;
 
     .screenBackground {
-        display: flex;
-        justify-content: center;  
-        align-items: center;     
+        @include box;
 
-        .logo {
-            width: 278px;
-            height: 79px;
+        .centerBox {
+            @include box;
+
+            .logo {
+                width: 14vw;
+                margin-top: 10vh;
+                margin-bottom: 13vh;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            a {
+                margin-left: 70px;
+                margin-right: 70px;
+
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
