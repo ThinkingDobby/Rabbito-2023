@@ -1,0 +1,28 @@
+body.intro {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    .screenBackground {
+        @include topCenterBox;
+
+        .header {
+            width: $contentWidth;
+
+            margin-top: 64px;
+
+            background-color: gray;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mainTextBox {
+            width: $contentWidth;
+
+            margin-top: 64px;
+
+            background-color: red;
+        }
+    }
+}

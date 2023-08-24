@@ -1,6 +1,16 @@
 @mixin box() {
     display: flex;
+    flex-direction: column;
+}
+
+@mixin centerBox() {
+    @include box;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+}
+
+@mixin topCenterBox() {
+    @include box;
+    justify-content: start;
+    align-items: center;
 }

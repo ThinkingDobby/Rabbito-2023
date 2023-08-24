@@ -70,15 +70,8 @@ table {
   color: #FEFEFE;
 }
 
-/* Background */
-.screenBackground {
-  background-color: #191919;
-  width: 100%;
-  height: 100%;
-}
-
 /* Text Type */
-.text, .subTitle {
+.basicText, .subTitle {
   font-family: "Pretendard-Regular";
   font-size: 16px;
   color: #FEFEFE;
@@ -89,6 +82,12 @@ table {
 }
 
 /* Property */
+.screenBackground {
+  background-color: #191919;
+  width: 100%;
+  height: 100%;
+}
+
 .unSelectable {
   user-select: none;
   -webkit-user-select: none;
@@ -97,39 +96,68 @@ table {
   -webkit-user-drag: none;
 }
 
+.icon {
+  width: 44px;
+  height: 44px;
+}
+
 /* Animation */
 /* Screen */
-body {
+body.index {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-body .screenBackground {
+body.index .screenBackground {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
-body .screenBackground .centerBox {
+body.index .screenBackground .centerBox {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
-body .screenBackground .centerBox .logo {
+body.index .screenBackground .centerBox .logo {
   width: 14vw;
   margin-top: 10vh;
   margin-bottom: 13vh;
 }
-body .screenBackground .centerBox .logo:hover {
+body.index .screenBackground .centerBox .logo:hover {
   cursor: pointer;
 }
-body .screenBackground .centerBox a {
+body.index .screenBackground .centerBox a {
   margin-left: 70px;
   margin-right: 70px;
   text-decoration: none;
 }
-body .screenBackground .centerBox a:hover {
+body.index .screenBackground .centerBox a:hover {
   text-decoration: underline;
   font-weight: 600;
+}
+
+body.intro {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+body.intro .screenBackground {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+body.intro .screenBackground .header {
+  width: 67%;
+  margin-top: 64px;
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+body.intro .screenBackground .mainTextBox {
+  width: 67%;
+  margin-top: 64px;
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

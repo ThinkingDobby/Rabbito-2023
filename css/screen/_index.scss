@@ -1,13 +1,13 @@
-body {
+body.index {
     width: 100%;
     height: 100%;
     position: absolute;
 
     .screenBackground {
-        @include box;
+        @include centerBox;
 
         .centerBox {
-            @include box;
+            @include centerBox;
 
             .logo {
                 width: 14vw;
