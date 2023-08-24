@@ -4,6 +4,10 @@
     color: $white;
 }
 
+b {
+    font-weight: 700;
+}
+
 /* Text Type */
 .basicText {
     font-family: $mainFont;
@@ -35,4 +39,15 @@
 .icon {
     width: 44px;
     height: 44px;
+}
+
+.header {
+    width: $contentWidth;
+
+    margin-top: 64px;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
 }

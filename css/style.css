@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,12 +54,11 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+/*
+regular: 400
+semi-bold: 600
+bold: 700
+*/
 /* Component */
 /* Basic Setting */
 ::-moz-selection {
@@ -70,9 +70,13 @@ table {
   color: #FEFEFE;
 }
 
+b {
+  font-weight: 700;
+}
+
 /* Text Type */
 .basicText, .subTitle {
-  font-family: "Pretendard-Regular";
+  font-family: "Pretendard Variable, sans-serif";
   font-size: 16px;
   color: #FEFEFE;
 }
@@ -99,6 +103,14 @@ table {
 .icon {
   width: 44px;
   height: 44px;
+}
+
+.header {
+  width: 67%;
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
 }
 
 /* Animation */
@@ -140,7 +152,7 @@ body.index .screenBackground .centerBox a:hover {
 
 body.intro {
   width: 100%;
-  height: 100%;
+  height: 300%;
   position: absolute;
 }
 body.intro .screenBackground {
@@ -149,15 +161,7 @@ body.intro .screenBackground {
   justify-content: start;
   align-items: center;
 }
-body.intro .screenBackground .header {
-  width: 67%;
-  margin-top: 64px;
-  background-color: gray;
-  display: flex;
-  justify-content: space-between;
-}
 body.intro .screenBackground .mainTextBox {
   width: 67%;
-  margin-top: 64px;
-  background-color: red;
+  margin-top: 172px;
 }/*# sourceMappingURL=style.css.map */
