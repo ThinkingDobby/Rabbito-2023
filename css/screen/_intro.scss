@@ -10,6 +10,18 @@ body.intro {
             width: $contentWidth;
 
             margin-top: 172px;
+
+            .textBox {
+                margin-bottom: 32px;
+
+                &:nth-child(2) {
+                    margin-bottom: 64px;
+                }
+
+                p {
+                    margin-bottom: 16px;
+                }
+            }            
         }
     }
 }

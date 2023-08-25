@@ -74,15 +74,39 @@ b {
   font-weight: 700;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Text Type */
-.basicText, .subTitle {
+.basicText {
   font-family: "Pretendard Variable, sans-serif";
   font-size: 16px;
   color: #FEFEFE;
 }
 
 .subTitle {
+  font-family: "Pretendard Variable, sans-serif";
   font-size: 20px;
+  color: #FEFEFE;
+}
+
+.linkText a {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+}
+.linkText a span {
+  font-family: "Pretendard Variable, sans-serif";
+  font-size: 14px;
+  color: #FAF0DC;
+}
+.linkText a img {
+  width: 5px;
+  height: 10px;
+  margin-left: 8px;
+  margin-bottom: 2px;
 }
 
 /* Property */
@@ -143,7 +167,6 @@ body.index .screenBackground .centerBox .logo:hover {
 body.index .screenBackground .centerBox a {
   margin-left: 70px;
   margin-right: 70px;
-  text-decoration: none;
 }
 body.index .screenBackground .centerBox a:hover {
   text-decoration: underline;
@@ -164,4 +187,13 @@ body.intro .screenBackground {
 body.intro .screenBackground .mainTextBox {
   width: 67%;
   margin-top: 172px;
+}
+body.intro .screenBackground .mainTextBox .textBox {
+  margin-bottom: 32px;
+}
+body.intro .screenBackground .mainTextBox .textBox:nth-child(2) {
+  margin-bottom: 64px;
+}
+body.intro .screenBackground .mainTextBox .textBox p {
+  margin-bottom: 16px;
 }/*# sourceMappingURL=style.css.map */

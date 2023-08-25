@@ -8,6 +8,10 @@ b {
     font-weight: 700;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Text Type */
 .basicText {
     font-family: $mainFont;
@@ -16,8 +20,31 @@ b {
 }
 
 .subTitle {
-    @extend .basicText;
+    font-family: $mainFont;
     font-size: 20px;
+    color: $white;
+}
+
+.linkText {
+    a {
+        @include box;
+        flex-direction: row;
+        align-items: center;
+
+        span {
+            font-family: $mainFont;
+            font-size: 14px;
+            color: $beige;
+        }
+    
+        img {
+            width: 5px;
+            height: 10px;
+    
+            margin-left: 8px;
+            margin-bottom: 2px;
+        }
+    }
 }
 
 /* Property */
@@ -51,3 +78,4 @@ b {
 
     position: fixed;
 }
+
