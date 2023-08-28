@@ -27,7 +27,7 @@ a {
 
 .linkText {
     a {
-        @include box;
+        display: inline-flex;
         flex-direction: row;
         align-items: center;
 
@@ -43,6 +43,11 @@ a {
     
             margin-left: 8px;
             margin-bottom: 2px;
+        }
+
+        .imgDown {
+            width: 10px;
+            height: 5px;
         }
     }
 }
