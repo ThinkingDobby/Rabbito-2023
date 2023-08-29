@@ -91,23 +91,26 @@ a {
   color: #FEFEFE;
 }
 
-.linkText a {
+.linkText a, .linkText .a {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
 }
-.linkText a span {
+.linkText a:hover, .linkText .a:hover {
+  cursor: pointer;
+}
+.linkText a span, .linkText .a span {
   font-family: "Pretendard Variable, sans-serif";
   font-size: 14px;
   color: #FAF0DC;
 }
-.linkText a img {
+.linkText a img, .linkText .a img {
   width: 5px;
   height: 10px;
   margin-left: 8px;
   margin-bottom: 2px;
 }
-.linkText a .imgDown {
+.linkText a .imgDown, .linkText .a .imgDown {
   width: 10px;
   height: 5px;
 }
@@ -130,6 +133,16 @@ a {
 .icon {
   width: 44px;
   height: 44px;
+}
+
+.smallIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.bigIcon {
+  width: 100px;
+  height: 100px;
 }
 
 .header {
@@ -211,6 +224,12 @@ body.intro .screenBackground .introSection .mainTextBox .textBox p {
 }
 body.intro .screenBackground .introSection .bottomBox {
   width: 67%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
   position: absolute;
   bottom: 64px;
+}
+body.intro .screenBackground .introSection .bottomBox .iconBox a {
+  margin-left: 8px;
 }/*# sourceMappingURL=style.css.map */

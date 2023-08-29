@@ -34,8 +34,18 @@ body.intro {
             .bottomBox {
                 width: $contentWidth;
 
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+
                 position: absolute;
                 bottom: 64px;
+
+                .iconBox {
+                    a {
+                        margin-left: 8px;
+                    }
+                }
             }
         }
     }

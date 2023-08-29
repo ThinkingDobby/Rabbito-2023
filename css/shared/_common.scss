@@ -26,10 +26,14 @@ a {
 }
 
 .linkText {
-    a {
+    a, .a {
         display: inline-flex;
         flex-direction: row;
         align-items: center;
+
+        &:hover {
+            cursor: pointer;
+        }
 
         span {
             font-family: $mainFont;
@@ -71,6 +75,16 @@ a {
 .icon {
     width: 44px;
     height: 44px;
+}
+
+.smallIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.bigIcon {
+    width: 100px;
+    height: 100px;
 }
 
 .header {
