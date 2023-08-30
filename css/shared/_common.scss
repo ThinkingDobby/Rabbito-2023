@@ -19,6 +19,13 @@ a {
     color: $white;
 }
 
+.smallText {
+    font-family: $mainFont;
+    font-size: 14px;
+    color: $gray2;
+    line-height: 150%;
+}
+
 .subTitle {
     font-family: $mainFont;
     font-size: 20px;
@@ -96,5 +103,7 @@ a {
     justify-content: space-between;
 
     position: fixed;
+
+    z-index: 10;
 }
 

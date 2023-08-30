@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var downButton = document.getElementsByClassName("downButton")[0];
+    var downButton = document.getElementsByClassName("toAbilitySectionButton")[0];
   
     downButton.addEventListener("click", function() {
       window.scrollTo({

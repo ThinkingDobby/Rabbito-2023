@@ -85,6 +85,13 @@ a {
   color: #FEFEFE;
 }
 
+.smallText {
+  font-family: "Pretendard Variable, sans-serif";
+  font-size: 14px;
+  color: #AEAEAE;
+  line-height: 150%;
+}
+
 .subTitle {
   font-family: "Pretendard Variable, sans-serif";
   font-size: 20px;
@@ -151,6 +158,7 @@ a {
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 10;
 }
 
 /* Animation */
@@ -191,7 +199,7 @@ body.index .screenBackground .centerBox a:hover {
 
 body.intro {
   width: 100%;
-  height: 300%;
+  height: 400%;
   position: absolute;
 }
 body.intro .screenBackground {
@@ -232,4 +240,33 @@ body.intro .screenBackground .introSection .bottomBox {
 }
 body.intro .screenBackground .introSection .bottomBox .iconBox a {
   margin-left: 8px;
+}
+body.intro .screenBackground .abilitySection {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 200vh;
+  position: relative;
+}
+body.intro .screenBackground .abilitySection .mainTextBox {
+  width: 67%;
+  margin-top: 140px;
+}
+body.intro .screenBackground .abilitySection .mainTextBox .textBox {
+  margin-bottom: 120px;
+}
+body.intro .screenBackground .abilitySection .mainTextBox .textBox .iconBox {
+  display: flex;
+}
+body.intro .screenBackground .abilitySection .mainTextBox .textBox .iconBox i {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  font-size: 44px;
+  color: #FEFEFE;
+}
+body.intro .screenBackground .abilitySection .mainTextBox .textBox .bottomSpacingBasicText {
+  margin-bottom: 16px;
 }/*# sourceMappingURL=style.css.map */
