@@ -199,7 +199,6 @@ body.index .screenBackground .centerBox a:hover {
 
 body.intro {
   width: 100%;
-  height: 400%;
   position: absolute;
 }
 body.intro .screenBackground {
@@ -247,7 +246,6 @@ body.intro .screenBackground .abilitySection {
   justify-content: start;
   align-items: center;
   width: 100%;
-  height: 200vh;
   position: relative;
 }
 body.intro .screenBackground .abilitySection .mainTextBox {
@@ -265,8 +263,35 @@ body.intro .screenBackground .abilitySection .mainTextBox .textBox .iconBox i {
   margin-bottom: 16px;
   margin-right: 16px;
   font-size: 44px;
-  color: #FEFEFE;
+  color: #CCCCCC;
 }
 body.intro .screenBackground .abilitySection .mainTextBox .textBox .bottomSpacingBasicText {
   margin-bottom: 16px;
+}
+body.intro .screenBackground .abilitySection .bottomBox {
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 40px;
+}
+body.intro .screenBackground .CertificateSection {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+body.intro .screenBackground .ValuesSection {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
