@@ -199,6 +199,7 @@ body.index .screenBackground .centerBox a:hover {
 
 body.intro {
   width: 100%;
+  height: auto;
   position: absolute;
 }
 body.intro .screenBackground {
@@ -274,9 +275,9 @@ body.intro .screenBackground .abilitySection .bottomBox {
   justify-content: space-between;
   align-items: end;
   margin-top: 40px;
+  margin-bottom: 64px;
 }
-body.intro .screenBackground .CertificateSection {
-  background-color: gray;
+body.intro .screenBackground .certificateSection {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -285,7 +286,53 @@ body.intro .screenBackground .CertificateSection {
   height: 100vh;
   position: relative;
 }
-body.intro .screenBackground .ValuesSection {
+body.intro .screenBackground .certificateSection .certificateBox, body.intro .screenBackground .certificateSection .languageBox {
+  width: 67%;
+}
+body.intro .screenBackground .certificateSection .certificateBox .title, body.intro .screenBackground .certificateSection .languageBox .title {
+  margin-bottom: 32px;
+}
+body.intro .screenBackground .certificateSection .certificateBox .items, body.intro .screenBackground .certificateSection .languageBox .items {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+body.intro .screenBackground .certificateSection .certificateBox .items .item, body.intro .screenBackground .certificateSection .languageBox .items .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 162px;
+  height: 90px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  position: relative;
+}
+body.intro .screenBackground .certificateSection .certificateBox .items .item img, body.intro .screenBackground .certificateSection .languageBox .items .item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body.intro .screenBackground .certificateSection .certificateBox .items .item .itemTextBox, body.intro .screenBackground .certificateSection .languageBox .items .item .itemTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+body.intro .screenBackground .certificateSection .certificateBox .items .item .itemTextBox .smallText, body.intro .screenBackground .certificateSection .languageBox .items .item .itemTextBox .smallText {
+  margin-top: 8px;
+  font-size: 12px;
+}
+body.intro .screenBackground .certificateSection .certificateBox .items .item .itemTextBox .scoreText, body.intro .screenBackground .certificateSection .languageBox .items .item .itemTextBox .scoreText {
+  font-size: 12px;
+  margin-top: 4px;
+}
+body.intro .screenBackground .certificateSection .certificateBox {
+  margin-top: 140px;
+  margin-bottom: 88px;
+}
+body.intro .screenBackground .valuesSection {
   background-color: red;
   display: flex;
   flex-direction: column;
