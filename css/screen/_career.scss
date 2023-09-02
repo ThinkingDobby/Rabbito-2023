@@ -1,0 +1,13 @@
+body.career {
+    width: 100%;
+    height: auto;
+    position: absolute;
+
+    .screenBackground {
+        @include topCenterBox;
+    }
+
+    .contentBox {
+        height: 100vh;
+    }
+}

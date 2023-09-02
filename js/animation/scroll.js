@@ -18,4 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
         behavior: 'smooth'
       });
     });
+
+
+    const toValuesSectionButton = document.getElementsByClassName("toValuesSectionButton")[0];
+    const valuesSection = document.getElementsByClassName("valuesSection")[0];
+
+    toValuesSectionButton.addEventListener("click", function() {
+      window.scrollTo({
+        top: valuesSection.offsetTop + valuesSection.offsetHeight,
+        behavior: 'smooth'
+      });
+    });
 });

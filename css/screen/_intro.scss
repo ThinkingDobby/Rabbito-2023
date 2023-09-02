@@ -52,6 +52,7 @@ body.intro {
         .abilitySection {
             @include topCenterBox;
             width: 100%;
+            height: auto;
 
             position: relative;
 
@@ -157,15 +158,48 @@ body.intro {
                 margin-top: 140px;
                 margin-bottom: 88px;
             }
+
+            .bottomBox {
+                width: $contentWidth;
+                margin-bottom: 0px;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+
+                position: absolute;
+                bottom: 64px;
+            }
         }
 
         .valuesSection {
-            background-color: red;
             @include topCenterBox;
             width: 100%;
             height: 100vh;
 
             position: relative;
+
+            .mainTextBox {
+                width: $contentWidth;
+
+                margin-top: 140px;
+
+                .textBox {
+                    margin-bottom: 120px;
+
+                    .basicText {
+                        margin-bottom: 16px;
+                    }
+
+                    .smallText {
+                        margin-bottom: 32px;
+                    }
+                }            
+
+                .textBox:nth-child(2) p:nth-child(1) {
+                    margin-bottom: 32px;
+                }
+            }
         }
     }
 }

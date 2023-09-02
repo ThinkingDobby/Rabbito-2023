@@ -247,6 +247,7 @@ body.intro .screenBackground .abilitySection {
   justify-content: start;
   align-items: center;
   width: 100%;
+  height: auto;
   position: relative;
 }
 body.intro .screenBackground .abilitySection .mainTextBox {
@@ -332,8 +333,16 @@ body.intro .screenBackground .certificateSection .certificateBox {
   margin-top: 140px;
   margin-bottom: 88px;
 }
+body.intro .screenBackground .certificateSection .bottomBox {
+  width: 67%;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: absolute;
+  bottom: 64px;
+}
 body.intro .screenBackground .valuesSection {
-  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -341,4 +350,35 @@ body.intro .screenBackground .valuesSection {
   width: 100%;
   height: 100vh;
   position: relative;
+}
+body.intro .screenBackground .valuesSection .mainTextBox {
+  width: 67%;
+  margin-top: 140px;
+}
+body.intro .screenBackground .valuesSection .mainTextBox .textBox {
+  margin-bottom: 120px;
+}
+body.intro .screenBackground .valuesSection .mainTextBox .textBox .basicText {
+  margin-bottom: 16px;
+}
+body.intro .screenBackground .valuesSection .mainTextBox .textBox .smallText {
+  margin-bottom: 32px;
+}
+body.intro .screenBackground .valuesSection .mainTextBox .textBox:nth-child(2) p:nth-child(1) {
+  margin-bottom: 32px;
+}
+
+body.career {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+body.career .screenBackground {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+body.career .contentBox {
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */
