@@ -19,7 +19,8 @@ body.career {
                 height: 100%;
                 
                 .lineBox {
-                    margin-top: 207px;
+                    top: 205px;
+
                     position: relative;
 
                     .line {
@@ -39,15 +40,37 @@ body.career {
 
                         &:nth-child(3) {
                             width: 6px;
-                            height: 83px;
+                            height: 86px;
 
-                            margin-top: 272px;
+                            margin-top: 271px;
                         }
                     }
                 }
 
                 .textBox {
+                    top: 176px;
+                    left: 22px;
 
+                    position: relative;
+
+                    .item {
+                        margin-bottom: 36px;
+
+                        .basicText {
+                            height: 19px;
+                        }
+
+                        .date {
+                            height: 17px;
+
+                            font-size: 14px;
+                            margin-bottom: 8px;
+                        }
+
+                        &:nth-child(3) {
+                            margin-bottom: 68px;
+                        }
+                    }
                 }
             }
         }
