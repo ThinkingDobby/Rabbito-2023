@@ -5,9 +5,63 @@ body.career {
 
     .screenBackground {
         @include topCenterBox;
-    }
 
-    .contentBox {
-        height: 100vh;
-    }
+        .timelineSection {
+            display: flex;
+            justify-content: start;
+
+            width: $contentWidth;
+            height: 100vh;
+            position: fixed;
+
+            .timelineBox {
+                width: 50%;
+                height: 100%;
+                
+                .lineBox {
+                    margin-top: 207px;
+                    position: relative;
+
+                    .line {
+                        position: absolute;
+
+                        &:nth-child(1) {
+                            width: 6px;
+                            height: 438px;
+                        }
+
+                        &:nth-child(2) {
+                            width: 6px;
+                            height: 86px;
+
+                            margin-top: 80px;
+                        }
+
+                        &:nth-child(3) {
+                            width: 6px;
+                            height: 83px;
+
+                            margin-top: 272px;
+                        }
+                    }
+                }
+
+                .textBox {
+
+                }
+            }
+        }
+
+        .contentSection {
+            display: flex;
+            justify-content: end;
+
+            width: $contentWidth;
+
+            .contentBox {
+                width: 50%;
+                height: 100vh;
+            }
+        }
+    }    
 }

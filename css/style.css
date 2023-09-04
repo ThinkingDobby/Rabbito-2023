@@ -379,6 +379,44 @@ body.career .screenBackground {
   justify-content: start;
   align-items: center;
 }
-body.career .contentBox {
+body.career .screenBackground .timelineSection {
+  display: flex;
+  justify-content: start;
+  width: 67%;
+  height: 100vh;
+  position: fixed;
+}
+body.career .screenBackground .timelineSection .timelineBox {
+  width: 50%;
+  height: 100%;
+}
+body.career .screenBackground .timelineSection .timelineBox .lineBox {
+  margin-top: 207px;
+  position: relative;
+}
+body.career .screenBackground .timelineSection .timelineBox .lineBox .line {
+  position: absolute;
+}
+body.career .screenBackground .timelineSection .timelineBox .lineBox .line:nth-child(1) {
+  width: 6px;
+  height: 438px;
+}
+body.career .screenBackground .timelineSection .timelineBox .lineBox .line:nth-child(2) {
+  width: 6px;
+  height: 86px;
+  margin-top: 80px;
+}
+body.career .screenBackground .timelineSection .timelineBox .lineBox .line:nth-child(3) {
+  width: 6px;
+  height: 83px;
+  margin-top: 272px;
+}
+body.career .screenBackground .contentSection {
+  display: flex;
+  justify-content: end;
+  width: 67%;
+}
+body.career .screenBackground .contentSection .contentBox {
+  width: 50%;
   height: 100vh;
 }/*# sourceMappingURL=style.css.map */
