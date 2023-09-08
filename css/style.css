@@ -395,6 +395,7 @@ body.career .screenBackground .timelineSection .timelineBox .lineBox {
   position: relative;
 }
 body.career .screenBackground .timelineSection .timelineBox .lineBox .line {
+  opacity: 50%;
   position: absolute;
 }
 body.career .screenBackground .timelineSection .timelineBox .lineBox .line:nth-child(1) {
@@ -412,20 +413,25 @@ body.career .screenBackground .timelineSection .timelineBox .lineBox .line:nth-c
   margin-top: 271px;
 }
 body.career .screenBackground .timelineSection .timelineBox .textBox {
-  top: 176px;
+  top: 174px;
   left: 22px;
   position: relative;
 }
 body.career .screenBackground .timelineSection .timelineBox .textBox .item {
+  opacity: 50%;
   margin-bottom: 36px;
 }
 body.career .screenBackground .timelineSection .timelineBox .textBox .item .basicText {
+  display: inline-block;
   height: 19px;
+}
+body.career .screenBackground .timelineSection .timelineBox .textBox .item .basicText:hover {
+  cursor: pointer;
 }
 body.career .screenBackground .timelineSection .timelineBox .textBox .item .date {
   height: 17px;
   font-size: 14px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 body.career .screenBackground .timelineSection .timelineBox .textBox .item:nth-child(3) {
   margin-bottom: 68px;

@@ -24,6 +24,7 @@ body.career {
                     position: relative;
 
                     .line {
+                        opacity: 50%;
                         position: absolute;
 
                         &:nth-child(1) {
@@ -48,23 +49,29 @@ body.career {
                 }
 
                 .textBox {
-                    top: 176px;
+                    top: 174px;
                     left: 22px;
 
                     position: relative;
 
                     .item {
+                        opacity: 50%;
                         margin-bottom: 36px;
 
                         .basicText {
+                            display: inline-block;
                             height: 19px;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
                         }
 
                         .date {
                             height: 17px;
 
                             font-size: 14px;
-                            margin-bottom: 8px;
+                            margin-bottom: 7px;
                         }
 
                         &:nth-child(3) {
