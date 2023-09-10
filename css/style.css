@@ -443,5 +443,43 @@ body.career .screenBackground .contentSection {
 }
 body.career .screenBackground .contentSection .contentBox {
   width: 50%;
-  height: 100vh;
+  min-height: 100vh;
+}
+body.career .screenBackground .contentSection .contentBox .section {
+  width: 100%;
+  margin-top: 172px;
+  display: none;
+}
+body.career .screenBackground .contentSection .contentBox .section .mainImage {
+  width: 100%;
+}
+body.career .screenBackground .contentSection .contentBox .section .textBox {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body.career .screenBackground .contentSection .contentBox .section .textBox .basicText {
+  margin-bottom: 16px;
+}
+body.career .screenBackground .contentSection .contentBox .section .textBox .smallText {
+  margin-bottom: 16px;
+}
+body.career .screenBackground .contentSection .contentBox .section:nth-child(1) {
+  display: block;
+}
+body.career .screenBackground .contentSection .contentBox .section:nth-child(1) .textBox:nth-child(2) {
+  margin-bottom: 104px;
+}
+body.career .screenBackground .contentSection .contentBox .section:nth-child(1) .mainImage:nth-child(1) {
+  margin-bottom: 32px;
+}
+body.career .screenBackground .contentSection .contentBox .section:nth-child(1) .mainImage:nth-child(4) {
+  margin-top: 16px;
+  margin-bottom: 120px;
+}
+body.career .screenBackground .contentSection .contentBox .section:nth-child(1) .mainImage:nth-child(6) {
+  margin-top: 16px;
+  margin-bottom: 120px;
+}
+body.career .screenBackground .contentSection .contentBox .section:nth-child(2) {
+  background-color: aqua;
 }/*# sourceMappingURL=style.css.map */

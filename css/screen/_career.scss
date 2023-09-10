@@ -90,7 +90,64 @@ body.career {
 
             .contentBox {
                 width: 50%;
-                height: 100vh;
+                min-height: 100vh;
+
+                // position: relative;
+
+                .section {
+                    width: 100%;
+
+                    margin-top: 172px;
+
+                    display: none;
+
+                    .mainImage {
+                        width: 100%;
+                    }
+
+                    .textBox {
+                        margin-left: 4px;
+                        margin-right: 4px;
+
+                        .basicText {
+                            margin-bottom: 16px;
+                        }
+
+                        .smallText {
+                            margin-bottom: 16px;
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        display: block;
+
+                        .textBox {
+                            &:nth-child(2) {
+                                margin-bottom: 104px;
+                            }
+                        }
+
+                        .mainImage {
+                            &:nth-child(1) {
+                                margin-bottom: 32px;
+                            }
+                            
+                            &:nth-child(4) {
+                                margin-top: 16px;
+                                margin-bottom: 120px;
+                            }
+
+                            &:nth-child(6) {
+                                margin-top: 16px;
+                                margin-bottom: 120px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        background-color: aqua;
+                    }
+                }
             }
         }
     }    
