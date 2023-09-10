@@ -463,9 +463,6 @@ body.career .screenBackground .contentSection .contentBox .section .textBox .bas
 body.career .screenBackground .contentSection .contentBox .section .textBox .smallText {
   margin-bottom: 16px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(1) {
-  display: block;
-}
 body.career .screenBackground .contentSection .contentBox .section:nth-child(1) .textBox:nth-child(2) {
   margin-bottom: 104px;
 }
@@ -481,5 +478,6 @@ body.career .screenBackground .contentSection .contentBox .section:nth-child(1) 
   margin-bottom: 120px;
 }
 body.career .screenBackground .contentSection .contentBox .section:nth-child(2) {
+  height: 100vh;
   background-color: aqua;
 }/*# sourceMappingURL=style.css.map */

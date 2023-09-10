@@ -92,8 +92,6 @@ body.career {
                 width: 50%;
                 min-height: 100vh;
 
-                // position: relative;
-
                 .section {
                     width: 100%;
 
@@ -119,8 +117,6 @@ body.career {
                     }
 
                     &:nth-child(1) {
-                        display: block;
-
                         .textBox {
                             &:nth-child(2) {
                                 margin-bottom: 104px;
@@ -145,6 +141,7 @@ body.career {
                     }
 
                     &:nth-child(2) {
+                        height: 100vh;
                         background-color: aqua;
                     }
                 }
