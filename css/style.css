@@ -477,7 +477,24 @@ body.career .screenBackground .contentSection .contentBox .section:nth-child(1) 
   margin-top: 16px;
   margin-bottom: 120px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(2) {
+body.career .screenBackground .contentSection .contentBox .section:nth-child(2) .mainImage:nth-child(1) {
+  margin-bottom: 32px;
+}
+body.career .screenBackground .contentSection .contentBox .section:nth-child(2) .imageBox {
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+}
+body.career .screenBackground .contentSection .contentBox .section:nth-child(2) .imageBox img:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  margin-right: 32px;
+}
+body.career .screenBackground .contentSection .contentBox .section:nth-child(2) .imageBox img:nth-child(2) {
+  width: 244px;
+  height: 80px;
+}
+body.career .screenBackground .contentSection .contentBox .section:nth-child(3) {
   height: 100vh;
-  background-color: aqua;
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

@@ -141,8 +141,37 @@ body.career {
                     }
 
                     &:nth-child(2) {
+                        .mainImage {
+                            &:nth-child(1) {
+                                margin-bottom: 32px;
+                            }
+                        }
+
+                        .imageBox {
+                            display: flex;
+                            align-items: center;
+
+                            margin-top: 64px;
+
+                            img {
+                                &:nth-child(1) {
+                                    width: 100px;
+                                    height: 100px;
+
+                                    margin-right: 32px;
+                                }
+
+                                &:nth-child(2) {
+                                    width: 244px;
+                                    height: 80px;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
                         height: 100vh;
-                        background-color: aqua;
+                        background-color: red;
                     }
                 }
             }
