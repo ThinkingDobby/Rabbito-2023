@@ -170,8 +170,26 @@ body.career {
                     }
 
                     &:nth-child(3) {
-                        height: 100vh;
-                        background-color: red;
+                        .imageBox {
+                            display: flex;
+                            align-items: center;
+
+                            margin-bottom: 32px;
+
+                            img {
+                                &:nth-child(1) {
+                                    width: 100px;
+                                    height: 100px;
+
+                                    margin-right: 16px;
+                                }
+
+                                &:nth-child(2) {
+                                    width: 100px;
+                                    height: 100px;
+                                }
+                            }
+                        }
                     }
                 }
             }

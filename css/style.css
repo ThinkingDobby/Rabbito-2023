@@ -494,7 +494,17 @@ body.career .screenBackground .contentSection .contentBox .section:nth-child(2) 
   width: 244px;
   height: 80px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(3) {
-  height: 100vh;
-  background-color: red;
+body.career .screenBackground .contentSection .contentBox .section:nth-child(3) .imageBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+body.career .screenBackground .contentSection .contentBox .section:nth-child(3) .imageBox img:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  margin-right: 16px;
+}
+body.career .screenBackground .contentSection .contentBox .section:nth-child(3) .imageBox img:nth-child(2) {
+  width: 100px;
+  height: 100px;
 }/*# sourceMappingURL=style.css.map */
