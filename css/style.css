@@ -379,132 +379,140 @@ body.career .screenBackground {
   justify-content: start;
   align-items: center;
 }
-body.career .screenBackground .timelineSection {
+body.career .screenBackground .mainContentBox {
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+}
+body.career .screenBackground .mainContentBox .timelineSection {
   display: flex;
   justify-content: start;
-  width: 67%;
+  width: 33.5%;
   height: 100vh;
   position: fixed;
 }
-body.career .screenBackground .timelineSection .timelineBox {
-  width: 50%;
+body.career .screenBackground .mainContentBox .timelineSection .timelineBox {
+  width: 100%;
   height: 100%;
 }
-body.career .screenBackground .timelineSection .timelineBox .lineBox {
+body.career .screenBackground .mainContentBox .timelineSection .timelineBox .lineBox {
   top: 205px;
   position: relative;
 }
-body.career .screenBackground .timelineSection .timelineBox .lineBox .line {
+body.career .screenBackground .mainContentBox .timelineSection .timelineBox .lineBox .line {
   opacity: 50%;
   position: absolute;
 }
-body.career .screenBackground .timelineSection .timelineBox .lineBox .line:nth-child(1) {
+body.career .screenBackground .mainContentBox .timelineSection .timelineBox .lineBox .line:nth-child(1) {
   width: 6px;
   height: 438px;
 }
-body.career .screenBackground .timelineSection .timelineBox .lineBox .line:nth-child(2) {
+body.career .screenBackground .mainContentBox .timelineSection .timelineBox .lineBox .line:nth-child(2) {
   width: 6px;
   height: 86px;
   margin-top: 80px;
 }
-body.career .screenBackground .timelineSection .timelineBox .lineBox .line:nth-child(3) {
+body.career .screenBackground .mainContentBox .timelineSection .timelineBox .lineBox .line:nth-child(3) {
   width: 6px;
   height: 86px;
   margin-top: 271px;
 }
-body.career .screenBackground .timelineSection .timelineBox .textBox {
+body.career .screenBackground .mainContentBox .timelineSection .timelineBox .textBox {
   top: 174px;
   left: 22px;
   position: relative;
 }
-body.career .screenBackground .timelineSection .timelineBox .textBox .item {
+body.career .screenBackground .mainContentBox .timelineSection .timelineBox .textBox .item {
   opacity: 50%;
   margin-bottom: 36px;
 }
-body.career .screenBackground .timelineSection .timelineBox .textBox .item .basicText {
+body.career .screenBackground .mainContentBox .timelineSection .timelineBox .textBox .item .basicText {
   display: inline-block;
   height: 19px;
 }
-body.career .screenBackground .timelineSection .timelineBox .textBox .item .basicText:hover {
+body.career .screenBackground .mainContentBox .timelineSection .timelineBox .textBox .item .basicText:hover {
   cursor: pointer;
 }
-body.career .screenBackground .timelineSection .timelineBox .textBox .item .date {
+body.career .screenBackground .mainContentBox .timelineSection .timelineBox .textBox .item .date {
   height: 17px;
   font-size: 14px;
   margin-bottom: 7px;
 }
-body.career .screenBackground .timelineSection .timelineBox .textBox .item:nth-child(3) {
+body.career .screenBackground .mainContentBox .timelineSection .timelineBox .textBox .item:nth-child(3) {
   margin-bottom: 68px;
 }
-body.career .screenBackground .contentSection {
+body.career .screenBackground .mainContentBox .timelinePlaceholder {
+  width: 33.5%;
+}
+body.career .screenBackground .mainContentBox .contentSection {
   display: flex;
   justify-content: end;
-  width: 67%;
-}
-body.career .screenBackground .contentSection .contentBox {
   width: 50%;
+}
+body.career .screenBackground .mainContentBox .contentSection .contentBox {
+  width: 100%;
   min-height: 100vh;
 }
-body.career .screenBackground .contentSection .contentBox .section {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section {
   width: 100%;
   margin-top: 172px;
   display: none;
 }
-body.career .screenBackground .contentSection .contentBox .section .mainImage {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section .mainImage {
   width: 100%;
 }
-body.career .screenBackground .contentSection .contentBox .section .textBox {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section .textBox {
   margin-left: 4px;
   margin-right: 4px;
 }
-body.career .screenBackground .contentSection .contentBox .section .textBox .basicText {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section .textBox .basicText {
   margin-bottom: 16px;
 }
-body.career .screenBackground .contentSection .contentBox .section .textBox .smallText {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section .textBox .smallText {
   margin-bottom: 16px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(1) .textBox:nth-child(2) {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section:nth-child(1) .textBox:nth-child(2) {
   margin-bottom: 104px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(1) .mainImage:nth-child(1) {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section:nth-child(1) .mainImage:nth-child(1) {
   margin-bottom: 32px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(1) .mainImage:nth-child(4) {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section:nth-child(1) .mainImage:nth-child(4) {
   margin-top: 16px;
   margin-bottom: 120px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(1) .mainImage:nth-child(6) {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section:nth-child(1) .mainImage:nth-child(6) {
   margin-top: 16px;
   margin-bottom: 120px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(2) .mainImage:nth-child(1) {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section:nth-child(2) .mainImage:nth-child(1) {
   margin-bottom: 32px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(2) .imageBox {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section:nth-child(2) .imageBox {
   display: flex;
   align-items: center;
   margin-top: 64px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(2) .imageBox img:nth-child(1) {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section:nth-child(2) .imageBox img:nth-child(1) {
   width: 100px;
   height: 100px;
   margin-right: 32px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(2) .imageBox img:nth-child(2) {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section:nth-child(2) .imageBox img:nth-child(2) {
   width: 244px;
   height: 80px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(3) .imageBox {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section:nth-child(3) .imageBox {
   display: flex;
   align-items: center;
   margin-bottom: 32px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(3) .imageBox img:nth-child(1) {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section:nth-child(3) .imageBox img:nth-child(1) {
   width: 100px;
   height: 100px;
   margin-right: 16px;
 }
-body.career .screenBackground .contentSection .contentBox .section:nth-child(3) .imageBox img:nth-child(2) {
+body.career .screenBackground .mainContentBox .contentSection .contentBox .section:nth-child(3) .imageBox img:nth-child(2) {
   width: 100px;
   height: 100px;
 }/*# sourceMappingURL=style.css.map */

@@ -6,187 +6,197 @@ body.career {
     .screenBackground {
         @include topCenterBox;
 
-        .timelineSection {
-            display: flex;
-            justify-content: start;
-
+        .mainContentBox {
             width: $contentWidth;
-            height: 100vh;
-            position: fixed;
+            display: flex;
+            justify-content: space-between;
 
-            .timelineBox {
-                width: 50%;
-                height: 100%;
-                
-                .lineBox {
-                    top: 205px;
+            .timelineSection {
+                display: flex;
+                justify-content: start;
 
-                    position: relative;
+                width: $contentWidth / 2;
+                height: 100vh;
+                position: fixed;
 
-                    .line {
-                        opacity: 50%;
-                        position: absolute;
+                .timelineBox {
+                    width: 100%;
+                    height: 100%;
+                    
+                    .lineBox {
+                        top: 205px;
 
-                        &:nth-child(1) {
-                            width: 6px;
-                            height: 438px;
-                        }
+                        position: relative;
 
-                        &:nth-child(2) {
-                            width: 6px;
-                            height: 86px;
+                        .line {
+                            opacity: 50%;
+                            position: absolute;
 
-                            margin-top: 80px;
-                        }
+                            &:nth-child(1) {
+                                width: 6px;
+                                height: 438px;
+                            }
 
-                        &:nth-child(3) {
-                            width: 6px;
-                            height: 86px;
+                            &:nth-child(2) {
+                                width: 6px;
+                                height: 86px;
 
-                            margin-top: 271px;
-                        }
-                    }
-                }
+                                margin-top: 80px;
+                            }
 
-                .textBox {
-                    top: 174px;
-                    left: 22px;
+                            &:nth-child(3) {
+                                width: 6px;
+                                height: 86px;
 
-                    position: relative;
-
-                    .item {
-                        opacity: 50%;
-                        margin-bottom: 36px;
-
-                        .basicText {
-                            display: inline-block;
-                            height: 19px;
-
-                            &:hover {
-                                cursor: pointer;
+                                margin-top: 271px;
                             }
                         }
+                    }
 
-                        .date {
-                            height: 17px;
+                    .textBox {
+                        top: 174px;
+                        left: 22px;
 
-                            font-size: 14px;
-                            margin-bottom: 7px;
-                        }
+                        position: relative;
 
-                        &:nth-child(3) {
-                            margin-bottom: 68px;
+                        .item {
+                            opacity: 50%;
+                            margin-bottom: 36px;
+
+                            .basicText {
+                                display: inline-block;
+                                height: 19px;
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .date {
+                                height: 17px;
+
+                                font-size: 14px;
+                                margin-bottom: 7px;
+                            }
+
+                            &:nth-child(3) {
+                                margin-bottom: 68px;
+                            }
                         }
                     }
                 }
             }
-        }
 
-        .contentSection {
-            display: flex;
-            justify-content: end;
+            .timelinePlaceholder {
+                width: $contentWidth / 2;
+            }
 
-            width: $contentWidth;
+            .contentSection {
+                display: flex;
+                justify-content: end;
 
-            .contentBox {
                 width: 50%;
-                min-height: 100vh;
 
-                .section {
+                .contentBox {
                     width: 100%;
+                    min-height: 100vh;
 
-                    margin-top: 172px;
-
-                    display: none;
-
-                    .mainImage {
+                    .section {
                         width: 100%;
-                    }
 
-                    .textBox {
-                        margin-left: 4px;
-                        margin-right: 4px;
+                        margin-top: 172px;
 
-                        .basicText {
-                            margin-bottom: 16px;
+                        display: none;
+
+                        .mainImage {
+                            width: 100%;
                         }
 
-                        .smallText {
-                            margin-bottom: 16px;
-                        }
-                    }
-
-                    &:nth-child(1) {
                         .textBox {
-                            &:nth-child(2) {
-                                margin-bottom: 104px;
+                            margin-left: 4px;
+                            margin-right: 4px;
+
+                            .basicText {
+                                margin-bottom: 16px;
+                            }
+
+                            .smallText {
+                                margin-bottom: 16px;
                             }
                         }
 
-                        .mainImage {
-                            &:nth-child(1) {
-                                margin-bottom: 32px;
-                            }
-                            
-                            &:nth-child(4) {
-                                margin-top: 16px;
-                                margin-bottom: 120px;
-                            }
-
-                            &:nth-child(6) {
-                                margin-top: 16px;
-                                margin-bottom: 120px;
-                            }
-                        }
-                    }
-
-                    &:nth-child(2) {
-                        .mainImage {
-                            &:nth-child(1) {
-                                margin-bottom: 32px;
-                            }
-                        }
-
-                        .imageBox {
-                            display: flex;
-                            align-items: center;
-
-                            margin-top: 64px;
-
-                            img {
-                                &:nth-child(1) {
-                                    width: 100px;
-                                    height: 100px;
-
-                                    margin-right: 32px;
-                                }
-
+                        &:nth-child(1) {
+                            .textBox {
                                 &:nth-child(2) {
-                                    width: 244px;
-                                    height: 80px;
+                                    margin-bottom: 104px;
+                                }
+                            }
+
+                            .mainImage {
+                                &:nth-child(1) {
+                                    margin-bottom: 32px;
+                                }
+                                
+                                &:nth-child(4) {
+                                    margin-top: 16px;
+                                    margin-bottom: 120px;
+                                }
+
+                                &:nth-child(6) {
+                                    margin-top: 16px;
+                                    margin-bottom: 120px;
                                 }
                             }
                         }
-                    }
 
-                    &:nth-child(3) {
-                        .imageBox {
-                            display: flex;
-                            align-items: center;
-
-                            margin-bottom: 32px;
-
-                            img {
+                        &:nth-child(2) {
+                            .mainImage {
                                 &:nth-child(1) {
-                                    width: 100px;
-                                    height: 100px;
-
-                                    margin-right: 16px;
+                                    margin-bottom: 32px;
                                 }
+                            }
 
-                                &:nth-child(2) {
-                                    width: 100px;
-                                    height: 100px;
+                            .imageBox {
+                                display: flex;
+                                align-items: center;
+
+                                margin-top: 64px;
+
+                                img {
+                                    &:nth-child(1) {
+                                        width: 100px;
+                                        height: 100px;
+
+                                        margin-right: 32px;
+                                    }
+
+                                    &:nth-child(2) {
+                                        width: 244px;
+                                        height: 80px;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            .imageBox {
+                                display: flex;
+                                align-items: center;
+
+                                margin-bottom: 32px;
+
+                                img {
+                                    &:nth-child(1) {
+                                        width: 100px;
+                                        height: 100px;
+
+                                        margin-right: 16px;
+                                    }
+
+                                    &:nth-child(2) {
+                                        width: 100px;
+                                        height: 100px;
+                                    }
                                 }
                             }
                         }
