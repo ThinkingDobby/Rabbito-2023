@@ -368,6 +368,33 @@ body.intro .screenBackground .valuesSection .mainTextBox .textBox:nth-child(2) p
   margin-bottom: 32px;
 }
 
+body.works {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+body.works .screenBackground {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+body.works .screenBackground .centerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  width: 77%;
+  height: 100vh;
+}
+body.works .screenBackground .centerBox .mainContentBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
 body.career {
   width: 100%;
   height: auto;

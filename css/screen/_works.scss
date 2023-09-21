@@ -1,0 +1,23 @@
+body.works {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    .screenBackground {
+        @include topCenterBox;
+
+        .centerBox {
+            @include centerBox;
+            background-color: red;
+
+            width: $largeContentWidth;
+            height: 100vh;  // 임시
+
+            .mainContentBox {
+                @include topCenterBox;
+
+
+            }
+        }
+    }
+}
