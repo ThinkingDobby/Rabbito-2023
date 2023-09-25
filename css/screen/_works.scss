@@ -8,7 +8,6 @@ body.works {
 
         .centerBox {
             @include centerBox;
-            background-color: red;
 
             width: $largeContentWidth;
             height: 100vh;  // 임시
@@ -16,7 +15,58 @@ body.works {
             .mainContentBox {
                 @include topCenterBox;
 
+                width: 100%;
 
+                .topBox {
+                    .textButtonBox {
+                        display: flex;
+
+                        div:nth-child(2) {
+                            margin-left: 16px;
+                            margin-right: 16px;
+                        }
+                    }
+
+                    .circleButtonBox {
+                        margin-top: 4vh;
+
+                        .buttonGroup {
+                            display: flex;
+                            justify-content: center;
+
+                            .circleButton {
+                                width: 8px;
+                                height: 8px;
+
+                                margin-right: 16px;
+
+                                &:last-child {
+                                    margin-right: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .bottomBox {
+                    display: flex;          
+                    justify-content: space-between;
+                    align-items: center;
+
+                    width: 100%;
+
+                    margin-top: 7vh;
+
+                    .arrowButton {
+                        width: 16px;
+                        height: 32px;
+                    }
+
+                    .contentBox {
+                        width: $contentWidth;
+                        height: 500px;
+                    }
+                }
             }
         }
     }
