@@ -446,18 +446,35 @@ body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .
   display: flex;
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   display: none;
+  justify-content: center;
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section:nth-child(1) {
   display: flex;
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section .appIcon {
   width: 39%;
+  margin-right: 44px;
 }
+body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section .textBox {
+  width: 39%;
+  margin-top: 22px;
+}
+body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section .textBox .subTitle {
+  margin-bottom: 8px;
+}
+body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section .textBox .smallText {
+  margin-bottom: 16px;
+}
+body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section .textBox .date {
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section .textBox .linkText {
+  display: none;
+  margin-top: 32px;
+}
+
 body.career {
   width: 100%;
   height: auto;

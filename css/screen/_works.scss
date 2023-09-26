@@ -78,8 +78,9 @@ body.works {
                             }
 
                             .section {
-                                @include centerBox;
                                 display: none;
+                                justify-content: center;
+                                
     
                                 &:nth-child(1) {
                                     display: flex;
@@ -87,10 +88,31 @@ body.works {
 
                                 .appIcon {
                                     width: 39%;
+                                    margin-right: 44px;
                                 }
 
                                 .textBox {
-                                    
+                                    width: 39%;
+                                    margin-top: 22px;
+
+                                    .subTitle {
+                                        margin-bottom: 8px;
+                                    }
+
+                                    .smallText {
+                                        margin-bottom: 16px;
+                                    }
+
+                                    .date {
+                                        font-size: 12px;
+                                        margin-bottom: 32px;
+                                    }
+
+                                    .linkText {
+                                        display: none;  // 임시
+
+                                        margin-top: 32px;
+                                    }
                                 }
                             }
                         }                        
