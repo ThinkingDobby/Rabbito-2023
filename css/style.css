@@ -407,6 +407,9 @@ body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox d
   margin-left: 16px;
   margin-right: 16px;
 }
+body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox div:last-child {
+  color: #8B8B8B;
+}
 body.works .screenBackground .centerBox .mainContentBox .topBox .circleButtonBox {
   margin-top: 4vh;
 }
