@@ -508,6 +508,7 @@ body.career .screenBackground .mainContentBox .timelineSection .timelineBox .lin
   margin-top: 271px;
 }
 body.career .screenBackground .mainContentBox .timelineSection .timelineBox .textBox {
+  width: 80%;
   top: 174px;
   left: 22px;
   position: relative;
