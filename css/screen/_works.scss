@@ -25,8 +25,17 @@ body.works {
 
                         div {
                             &:nth-child(2) {
-                                margin-left: 16px;
-                                margin-right: 16px;
+                                margin-left: 8px;
+                                margin-right: 8px;
+                            }
+                        }
+
+                        .textButton {
+                            padding-left: 8px;
+                            padding-right: 8px;
+
+                            &:hover {
+                                cursor: pointer;
                             }
 
                             &:last-child {
@@ -36,7 +45,7 @@ body.works {
                     }
 
                     .circleButtonBox {
-                        margin-top: 4vh;
+                        margin-top: 3vh;
 
                         .buttonGroup {
                             display: none;
@@ -50,10 +59,10 @@ body.works {
                                 width: 8px;
                                 height: 8px;
 
-                                margin-right: 16px;
+                                padding: 8px;
 
-                                &:last-child {
-                                    margin-right: 0px;
+                                &:hover {
+                                    cursor: pointer;
                                 }
                             }
                         }
@@ -67,30 +76,38 @@ body.works {
 
                     width: 100%;
 
-                    margin-top: 7vh;
+                    margin-top: 6vh;
 
                     .arrowButton {
                         width: 16px;
                         height: 32px;
+
+                        &:nth-child(1) {
+                            padding-right: 8px;
+                        }
+
+                        &:nth-child(2) {
+                            padding-left: 8px;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
 
                     .contentBox {
                         width: $contentWidth;
                         
                         .sectionGroup {
-                            display: none;
-                            &:nth-child(1) {
+                            display: flex;
+
+                            &:nth-child(1) .section:nth-child(1) {
                                 display: flex;
                             }
 
                             .section {
                                 display: none;
                                 justify-content: center;
-                                
-    
-                                &:nth-child(1) {
-                                    display: flex;
-                                }
 
                                 .appIcon {
                                     width: 39%;

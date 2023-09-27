@@ -404,14 +404,21 @@ body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox {
   display: flex;
 }
 body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox div:nth-child(2) {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
-body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox div:last-child {
+body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox .textButton {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox .textButton:hover {
+  cursor: pointer;
+}
+body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox .textButton:last-child {
   color: #8B8B8B;
 }
 body.works .screenBackground .centerBox .mainContentBox .topBox .circleButtonBox {
-  margin-top: 4vh;
+  margin-top: 3vh;
 }
 body.works .screenBackground .centerBox .mainContentBox .topBox .circleButtonBox .buttonGroup {
   display: none;
@@ -423,37 +430,43 @@ body.works .screenBackground .centerBox .mainContentBox .topBox .circleButtonBox
 body.works .screenBackground .centerBox .mainContentBox .topBox .circleButtonBox .buttonGroup .circleButton {
   width: 8px;
   height: 8px;
-  margin-right: 16px;
+  padding: 8px;
 }
-body.works .screenBackground .centerBox .mainContentBox .topBox .circleButtonBox .buttonGroup .circleButton:last-child {
-  margin-right: 0px;
+body.works .screenBackground .centerBox .mainContentBox .topBox .circleButtonBox .buttonGroup .circleButton:hover {
+  cursor: pointer;
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 7vh;
+  margin-top: 6vh;
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .arrowButton {
   width: 16px;
   height: 32px;
 }
+body.works .screenBackground .centerBox .mainContentBox .bottomBox .arrowButton:nth-child(1) {
+  padding-right: 8px;
+}
+body.works .screenBackground .centerBox .mainContentBox .bottomBox .arrowButton:nth-child(2) {
+  padding-left: 8px;
+}
+body.works .screenBackground .centerBox .mainContentBox .bottomBox .arrowButton:hover {
+  cursor: pointer;
+}
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox {
   width: 67vw;
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup {
-  display: none;
+  display: flex;
 }
-body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup:nth-child(1) {
+body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup:nth-child(1) .section:nth-child(1) {
   display: flex;
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section {
   display: none;
   justify-content: center;
-}
-body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section:nth-child(1) {
-  display: flex;
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section .appIcon {
   width: 39%;
