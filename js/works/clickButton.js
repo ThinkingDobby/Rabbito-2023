@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const circleButtons = document.getElementsByClassName("circleButton")
+    const arrowButtons = document.getElementsByClassName("arrowButton")
+    const circleButtonGroups = document.getElementsByClassName("buttonGroup")
+    const titles = document.getElementsByClassName("subTitle")
     const contentSections = document.getElementsByClassName("section")
 
     const whiteCirclePath = "../data/images/works/works_circle_white.png"
@@ -11,6 +14,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let clickedIndex = 0;
 
+    // titleButton
+
+
+    // arrowButton
+    arrowButtons[0].addEventListener("click", function() {
+        let nextIndex = clickedIndex - 1
+        if (selectedType == 0) {
+            if (nextIndex < 0) nextIndex = firstGroupSize - 1
+        } else if (selectedType == 1) {
+            if (nextIndex < firstGroupSize) nextIndex = secondGroupSize
+        }
+
+        circleButtons[nextIndex].dispatchEvent(new Event("click"));
+    });
+    
+    arrowButtons[1].addEventListener("click", function() {
+        let nextIndex = clickedIndex + 1
+        console.log(nextIndex);
+        if (selectedType == 0) {
+            if (nextIndex >= firstGroupSize) nextIndex = 0
+        } else if (selectedType == 1) {
+            if (nextIndex >= secondGroupSize) nextIndex = firstGroupSize
+        }
+
+        circleButtons[nextIndex].dispatchEvent(new Event("click"));
+    });
+
+
+    // circleButton
     for (let i = 0; i < circleButtons.length; i++) {
         circleButtons[i].addEventListener("mouseover", function() {
             circleButtons[i].src = whiteCirclePath;
