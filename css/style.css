@@ -640,4 +640,19 @@ body.career .screenBackground .mainContentBox .contentSection .contentBox .secti
 body.career .screenBackground .mainContentBox .contentSection .contentBox .section:nth-child(3) .imageBox img:nth-child(2) {
   width: 100px;
   height: 100px;
+}
+
+body.intro {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+body.intro .screenBackground {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+body.intro .screenBackground .mainSection {
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */

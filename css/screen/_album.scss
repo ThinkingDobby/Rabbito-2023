@@ -1,0 +1,13 @@
+body.intro {
+    width: 100%;
+    height: auto;
+    position: absolute;
+
+    .screenBackground {
+        @include topCenterBox;
+
+        .mainSection {
+            height: 100vh;
+        }
+    }
+}
