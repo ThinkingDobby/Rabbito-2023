@@ -642,17 +642,17 @@ body.career .screenBackground .mainContentBox .contentSection .contentBox .secti
   height: 100px;
 }
 
-body.intro {
+body.album {
   width: 100%;
   height: auto;
   position: absolute;
 }
-body.intro .screenBackground {
+body.album .screenBackground {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
 }
-body.intro .screenBackground .mainSection {
+body.album .screenBackground .mainSection {
   height: 100vh;
 }/*# sourceMappingURL=style.css.map */
