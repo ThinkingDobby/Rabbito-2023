@@ -364,7 +364,7 @@ body.intro .screenBackground .valuesSection .mainTextBox .textBox .basicText {
 body.intro .screenBackground .valuesSection .mainTextBox .textBox .smallText {
   margin-bottom: 32px;
 }
-body.intro .screenBackground .valuesSection .mainTextBox .textBox:nth-child(2) p:nth-child(1) {
+body.intro .screenBackground .valuesSection .mainTextBox .textBox .boxTitle {
   margin-bottom: 32px;
 }
 
