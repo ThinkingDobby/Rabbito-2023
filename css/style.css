@@ -406,6 +406,7 @@ body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox {
 body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox div:nth-child(2) {
   margin-left: 8px;
   margin-right: 8px;
+  color: #CCCCCC;
 }
 body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox .textButton {
   padding-left: 8px;

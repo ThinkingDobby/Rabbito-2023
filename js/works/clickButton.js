@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const whiteCirclePath = "../data/images/works/works_circle_white.png"
     const grayCirclePath = "../data/images/works/works_circle_gray.png"
 
+    const white = "#FEFEFE";
+    const gray4 = "#8B8B8B";
+
     let selectedType = 0;
     let clickedIndex = 0;
 
@@ -18,19 +21,19 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(titles);
     for (let i = 0; i < titles.length; i++) {
         titles[i].addEventListener("mouseover", function() {
-            titles[i].style.color = "#FEFEFE";
+            titles[i].style.color = white;
         });
     
         titles[i].addEventListener("mouseout", function() {
             if (i != selectedType) {
-                titles[i].style.color = "#8B8B8B";
+                titles[i].style.color = gray4;
             }
         });
     
         titles[i].addEventListener("click", function() {            
             if (i != selectedType) {
-                titles[selectedType].style.color = "#8B8B8B";
-                titles[i].style.color = "#FEFEFE";
+                titles[selectedType].style.color = gray4;
+                titles[i].style.color = white;
 
                 circleButtons[clickedIndex].src = grayCirclePath;
                 contentSections[clickedIndex].style.display = "none";
