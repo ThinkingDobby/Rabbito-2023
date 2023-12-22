@@ -106,10 +106,15 @@ body.works {
 
                             &:nth-child(1) .section:nth-child(1) {
                                 display: flex;
+                                visibility: visible;
+                                opacity: 1;
                             }
 
                             .section {
                                 display: none;
+                                visibility: hidden;
+                                opacity: 0;
+                                @include opacityVisibilityFade;
                                 justify-content: center;
 
                                 .appIcon {

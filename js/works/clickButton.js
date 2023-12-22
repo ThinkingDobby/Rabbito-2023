@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 circleButtons[clickedIndex].src = grayCirclePath;
                 contentSections[clickedIndex].style.display = "none";
+                contentSections[clickedIndex].style.visibility = "hidden";
+                contentSections[clickedIndex].style.opacity = "0";
 
                 circleButtonGroups[selectedType].style.display = "none";
                 circleButtonGroups[i].style.display = "flex";
@@ -44,12 +46,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (i == 0) {   // 메인
                     circleButtons[0].src = whiteCirclePath;
                     contentSections[0].style.display = "flex";
-
+                    contentSections[0].style.visibility = "visible";
+                    setTimeout(() => contentSections[0].style.opacity = "1", 0);  
                     clickedIndex = 0;
                 } else if (i == 1) {    // 서브
                     circleButtons[firstGroupSize].src = whiteCirclePath;
                     contentSections[firstGroupSize].style.display = "flex";
-        
+                    contentSections[firstGroupSize].style.visibility = "visible";
+                    setTimeout(() => contentSections[firstGroupSize].style.opacity = "1", 0);
                     clickedIndex = firstGroupSize;
                 }
 
@@ -81,6 +85,31 @@ document.addEventListener("DOMContentLoaded", function() {
         circleButtons[nextIndex].dispatchEvent(new Event("click"));
     });
 
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "ArrowLeft") {
+            let nextIndex = clickedIndex - 1
+            if (selectedType == 0) {
+                if (nextIndex < 0) nextIndex = firstGroupSize - 1
+            } else if (selectedType == 1) {
+                if (nextIndex < firstGroupSize) nextIndex = firstGroupSize + secondGroupSize - 1
+            }
+    
+            circleButtons[nextIndex].dispatchEvent(new Event("click"));
+        }
+    });
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "ArrowRight") {
+            let nextIndex = clickedIndex + 1
+            if (selectedType == 0) {
+                if (nextIndex >= firstGroupSize) nextIndex = 0
+            } else if (selectedType == 1) {
+                if (nextIndex >= firstGroupSize + secondGroupSize) nextIndex = firstGroupSize
+            }
+    
+            circleButtons[nextIndex].dispatchEvent(new Event("click"));
+        }
+    });
 
     // circleButton
     for (let i = 0; i < circleButtons.length; i++) {
@@ -97,9 +126,13 @@ document.addEventListener("DOMContentLoaded", function() {
         circleButtons[i].addEventListener("click", function() {
             circleButtons[clickedIndex].src = grayCirclePath;
             contentSections[clickedIndex].style.display = "none";
+            contentSections[clickedIndex].style.visibility = "hidden";
+            contentSections[clickedIndex].style.opacity = "0";
 
             circleButtons[i].src = whiteCirclePath;
             contentSections[i].style.display = "flex";
+            contentSections[i].style.visibility = "visible";
+            setTimeout(() => contentSections[i].style.opacity = "1", 0);   
             clickedIndex = i;
         });
     }

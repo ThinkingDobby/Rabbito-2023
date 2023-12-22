@@ -465,9 +465,14 @@ body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup:nth-child(1) .section:nth-child(1) {
   display: flex;
+  visibility: visible;
+  opacity: 1;
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section {
   display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   justify-content: center;
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox .sectionGroup .section .appIcon {
