@@ -411,6 +411,7 @@ body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox d
 body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox .textButton {
   padding-left: 8px;
   padding-right: 8px;
+  transition: color 0.2s ease-in-out;
 }
 body.works .screenBackground .centerBox .mainContentBox .topBox .textButtonBox .textButton:hover {
   cursor: pointer;

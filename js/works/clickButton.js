@@ -41,12 +41,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 circleButtonGroups[selectedType].style.display = "none";
                 circleButtonGroups[i].style.display = "flex";
 
-                if (i == 0) {
+                if (i == 0) {   // 메인
                     circleButtons[0].src = whiteCirclePath;
                     contentSections[0].style.display = "flex";
 
                     clickedIndex = 0;
-                } else if (i == 1) {
+                } else if (i == 1) {    // 서브
                     circleButtons[firstGroupSize].src = whiteCirclePath;
                     contentSections[firstGroupSize].style.display = "flex";
         

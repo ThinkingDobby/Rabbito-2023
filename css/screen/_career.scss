@@ -110,7 +110,7 @@ body.career {
                         display: none;
                         visibility: hidden;
                         opacity: 0;
-                        @include fastFade;
+                        @include opacityVisibilityFade;
 
                         .mainImage {
                             width: 100%;
