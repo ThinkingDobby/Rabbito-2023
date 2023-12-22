@@ -17,6 +17,19 @@ document.addEventListener("DOMContentLoaded", function() {
     let firstGroupSize = document.querySelectorAll('.buttonGroup:nth-child(1) .circleButton').length;
     let secondGroupSize = document.querySelectorAll('.buttonGroup:nth-child(2) .circleButton').length;
 
+
+    function setContentVisible(index) {
+        contentSections[index].style.display = "flex";
+        contentSections[index].style.visibility = "visible";
+        setTimeout(() => contentSections[index].style.opacity = "1", 0);  
+    }
+
+    function setContentHidden(index) {
+        contentSections[index].style.display = "none";
+        contentSections[index].style.visibility = "hidden";
+        contentSections[index].style.opacity = "0";
+    }
+
     // titleButton
     console.log(titles);
     for (let i = 0; i < titles.length; i++) {
@@ -36,24 +49,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 titles[i].style.color = white;
 
                 circleButtons[clickedIndex].src = grayCirclePath;
-                contentSections[clickedIndex].style.display = "none";
-                contentSections[clickedIndex].style.visibility = "hidden";
-                contentSections[clickedIndex].style.opacity = "0";
+                setContentHidden(clickedIndex);
 
                 circleButtonGroups[selectedType].style.display = "none";
                 circleButtonGroups[i].style.display = "flex";
 
                 if (i == 0) {   // 메인
                     circleButtons[0].src = whiteCirclePath;
-                    contentSections[0].style.display = "flex";
-                    contentSections[0].style.visibility = "visible";
-                    setTimeout(() => contentSections[0].style.opacity = "1", 0);  
+                    setContentVisible(0);
                     clickedIndex = 0;
                 } else if (i == 1) {    // 서브
                     circleButtons[firstGroupSize].src = whiteCirclePath;
-                    contentSections[firstGroupSize].style.display = "flex";
-                    contentSections[firstGroupSize].style.visibility = "visible";
-                    setTimeout(() => contentSections[firstGroupSize].style.opacity = "1", 0);
+                    setContentVisible(firstGroupSize);
                     clickedIndex = firstGroupSize;
                 }
 
@@ -62,19 +69,18 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // arrowButton
-    arrowButtons[0].addEventListener("click", function() {
-        let nextIndex = clickedIndex - 1
+    function handleLeftArrowClick() {
+        let nextIndex = clickedIndex - 1;
         if (selectedType == 0) {
-            if (nextIndex < 0) nextIndex = firstGroupSize - 1
+            if (nextIndex < 0) nextIndex = firstGroupSize - 1;
         } else if (selectedType == 1) {
-            if (nextIndex < firstGroupSize) nextIndex = firstGroupSize + secondGroupSize - 1
+            if (nextIndex < firstGroupSize) nextIndex = firstGroupSize + secondGroupSize - 1;
         }
-
-        circleButtons[nextIndex].dispatchEvent(new Event("click"));
-    });
     
-    arrowButtons[1].addEventListener("click", function() {
+        circleButtons[nextIndex].dispatchEvent(new Event("click"));
+    }
+
+    function handleRightArrowClick() {
         let nextIndex = clickedIndex + 1
         if (selectedType == 0) {
             if (nextIndex >= firstGroupSize) nextIndex = 0
@@ -83,31 +89,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         circleButtons[nextIndex].dispatchEvent(new Event("click"));
-    });
+    }
 
+    // arrowButton
+    arrowButtons[0].addEventListener("click", handleLeftArrowClick);
+    arrowButtons[1].addEventListener("click", handleRightArrowClick);
+
+    // 키보드 화살표
     document.addEventListener("keydown", function(event) {
         if (event.key === "ArrowLeft") {
-            let nextIndex = clickedIndex - 1
-            if (selectedType == 0) {
-                if (nextIndex < 0) nextIndex = firstGroupSize - 1
-            } else if (selectedType == 1) {
-                if (nextIndex < firstGroupSize) nextIndex = firstGroupSize + secondGroupSize - 1
-            }
-    
-            circleButtons[nextIndex].dispatchEvent(new Event("click"));
+            handleLeftArrowClick();
         }
     });
-
     document.addEventListener("keydown", function(event) {
         if (event.key === "ArrowRight") {
-            let nextIndex = clickedIndex + 1
-            if (selectedType == 0) {
-                if (nextIndex >= firstGroupSize) nextIndex = 0
-            } else if (selectedType == 1) {
-                if (nextIndex >= firstGroupSize + secondGroupSize) nextIndex = firstGroupSize
-            }
-    
-            circleButtons[nextIndex].dispatchEvent(new Event("click"));
+            handleRightArrowClick();
         }
     });
 
@@ -125,14 +121,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         circleButtons[i].addEventListener("click", function() {
             circleButtons[clickedIndex].src = grayCirclePath;
-            contentSections[clickedIndex].style.display = "none";
-            contentSections[clickedIndex].style.visibility = "hidden";
-            contentSections[clickedIndex].style.opacity = "0";
+            setContentHidden(clickedIndex);
 
             circleButtons[i].src = whiteCirclePath;
-            contentSections[i].style.display = "flex";
-            contentSections[i].style.visibility = "visible";
-            setTimeout(() => contentSections[i].style.opacity = "1", 0);   
+            setContentVisible(i);
             clickedIndex = i;
         });
     }
