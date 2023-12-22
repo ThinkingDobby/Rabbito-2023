@@ -108,6 +108,9 @@ body.career {
                         margin-top: 172px;
 
                         display: none;
+                        visibility: hidden;
+                        opacity: 0;
+                        @include fastFade;
 
                         .mainImage {
                             width: 100%;

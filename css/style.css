@@ -582,6 +582,9 @@ body.career .screenBackground .mainContentBox .contentSection .contentBox .secti
   width: 100%;
   margin-top: 172px;
   display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 body.career .screenBackground .mainContentBox .contentSection .contentBox .section .mainImage {
   width: 100%;

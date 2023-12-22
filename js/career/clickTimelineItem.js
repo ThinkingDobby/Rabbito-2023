@@ -42,7 +42,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         if (prevMember.className != "section") {
                             prevMember.style.opacity = "0.5";
                         } else {
-                            prevMember.style.display = "none";
+                            prevMember.style.display = "none"
+                            prevMember.style.visibility = "hidden";
+                            prevMember.style.opacity = "0";
                         }
                     }
                 }
@@ -53,7 +55,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     if (member.className != "section") {
                         member.style.opacity = "1";
                     } else {
-                        member.style.display = "block";
+                        member.style.display = "block"
+                        member.style.visibility = "visible";
+                        setTimeout(() => member.style.opacity = "1", 0);                        
                     }
                 }
             });
