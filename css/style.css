@@ -674,9 +674,6 @@ body.album .screenBackground .mainSection div {
   width: 67vw;
   position: relative;
 }
-body.album .screenBackground .mainSection div :nth-child(2n+1) {
-  right: 0px;
-}
 body.album .screenBackground .mainSection div img {
   width: 28vw;
   position: absolute;
@@ -684,6 +681,9 @@ body.album .screenBackground .mainSection div img {
 body.album .screenBackground .mainSection .petImageBox {
   margin-top: 172px;
   height: 129.3866666667vw;
+}
+body.album .screenBackground .mainSection .petImageBox :nth-child(2n+1) {
+  right: 0px;
 }
 body.album .screenBackground .mainSection .petImageBox :nth-child(3) {
   top: 28.6666666667vw;
@@ -702,8 +702,11 @@ body.album .screenBackground .mainSection .petImageBox :nth-child(7) {
 }
 body.album .screenBackground .mainSection .hobbyImageBox {
   margin-top: 240px;
-  height: 94.6666666667vw;
+  height: 66vw;
   margin-bottom: 120px;
+}
+body.album .screenBackground .mainSection .hobbyImageBox :nth-child(2n) {
+  right: 0px;
 }
 body.album .screenBackground .mainSection .hobbyImageBox :nth-child(3) {
   top: 28.6666666667vw;

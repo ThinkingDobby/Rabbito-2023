@@ -15,10 +15,6 @@ body.album {
                 width: $contentWidth;
                 position: relative;
 
-                :nth-child(2n + 1) {
-                    right: 0px
-                }
-
                 img {
                     width: 28vw;
                     position: absolute;                    
@@ -26,6 +22,10 @@ body.album {
             }
 
             .petImageBox {
+                :nth-child(2n + 1) {
+                    right: 0px
+                }
+
                 margin-top: 172px;
                 height: calc((28vw * 4/3 + 10vw) * 2 + 28vw * 1.24);
 
@@ -51,8 +51,12 @@ body.album {
             }
 
             .hobbyImageBox {
+                :nth-child(2n) {
+                    right: 0px
+                }
+
                 margin-top: 240px;
-                height: calc((28vw * 2/3 + 10vw) * 2 + 28vw * 4/3);
+                height: calc(28vw * 4/3 + 10vw + 28vw * 2/3);
                 margin-bottom: 120px;
 
                 :nth-child(3) {
