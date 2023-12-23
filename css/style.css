@@ -663,5 +663,54 @@ body.album .screenBackground {
   align-items: center;
 }
 body.album .screenBackground .mainSection {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+body.album .screenBackground .mainSection div {
+  width: 67vw;
+  position: relative;
+}
+body.album .screenBackground .mainSection div :nth-child(2n+1) {
+  right: 0px;
+}
+body.album .screenBackground .mainSection div img {
+  width: 28vw;
+  position: absolute;
+}
+body.album .screenBackground .mainSection .petImageBox {
+  margin-top: 172px;
+  height: 129.3866666667vw;
+}
+body.album .screenBackground .mainSection .petImageBox :nth-child(3) {
+  top: 28.6666666667vw;
+}
+body.album .screenBackground .mainSection .petImageBox :nth-child(4) {
+  top: 47.3333333333vw;
+}
+body.album .screenBackground .mainSection .petImageBox :nth-child(5) {
+  top: 76vw;
+}
+body.album .screenBackground .mainSection .petImageBox :nth-child(6) {
+  top: 94.6666666667vw;
+}
+body.album .screenBackground .mainSection .petImageBox :nth-child(7) {
+  top: 104.6666666667vw;
+}
+body.album .screenBackground .mainSection .hobbyImageBox {
+  margin-top: 240px;
+  height: 94.6666666667vw;
+  margin-bottom: 120px;
+}
+body.album .screenBackground .mainSection .hobbyImageBox :nth-child(3) {
+  top: 28.6666666667vw;
+}
+body.album .screenBackground .mainSection .hobbyImageBox :nth-child(4) {
+  top: 47.3333333333vw;
+}
+body.album .screenBackground .mainSection .hobbyImageBox :nth-child(5) {
+  top: 57.3333333333vw;
 }/*# sourceMappingURL=style.css.map */
