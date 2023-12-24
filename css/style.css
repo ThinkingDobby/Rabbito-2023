@@ -59,6 +59,7 @@ regular: 400
 semi-bold: 600
 bold: 700
 */
+/* Animation */
 /* Component */
 /* Basic Setting */
 ::-moz-selection {
@@ -160,8 +161,23 @@ a {
   position: fixed;
   z-index: 10;
 }
+.header div {
+  position: relative;
+}
+.header div img {
+  position: absolute;
+}
+.header div .icon {
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+}
+.header div .iconHovered {
+  width: 44px;
+  height: 44px;
+  opacity: 0;
+  transition: opacity 0.25s ease-in;
+}
 
-/* Animation */
 /* Screen */
 body.index {
   width: 100%;

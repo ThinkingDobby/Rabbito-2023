@@ -1,11 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const logo = document.querySelector(".header:nth-child(1) .icon");
+    const logoBox = document.getElementsByClassName("logoBox")[0];
 
-    logo.addEventListener("mouseover", function() {
-        this.src = "./data/images/icon_rabbito_filled.png";
+    const logo = document.querySelector(".logoBox .icon");
+    const logoHovered = document.querySelector(".logoBox .iconHovered");
+
+    logoBox.addEventListener("mouseover", function() {
+        logo.style.opacity = 0;
+        logoHovered.style.opacity = 1;
     })
 
-    logo.addEventListener("mouseout", function() {
-        this.src = "./data/images/icon_rabbito.png";
+    logoBox.addEventListener("mouseout", function() {
+        logo.style.opacity = 1;
+        logoHovered.style.opacity = 0;
     })
 });

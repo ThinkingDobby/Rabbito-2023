@@ -4,12 +4,12 @@
 @import "./shared/font";
 @import "./shared/size";
 
+/* Animation */
+@import "./animation/fade";
+
 /* Component */
 @import "./shared/mixin";
 @import "./shared/common";
-
-/* Animation */
-@import "./animation/fade";
 
 /* Screen */
 @import "./screen/index";

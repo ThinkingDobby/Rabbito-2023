@@ -105,5 +105,26 @@ a {
     position: fixed;
 
     z-index: 10;
+
+    div {
+        position: relative;
+
+        img {
+            position: absolute;
+        }
+
+        .icon {
+            opacity: 1;
+            @include opacityFade;
+        }
+
+        .iconHovered {
+            width: 44px;
+            height: 44px;
+
+            opacity: 0;
+            @include opacityFade;
+        }
+    }
 }
 
