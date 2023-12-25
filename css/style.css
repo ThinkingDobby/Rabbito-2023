@@ -161,21 +161,28 @@ a {
   position: fixed;
   z-index: 10;
 }
-.header div {
+.header .logoBox {
   position: relative;
 }
-.header div .icon, .header div .iconHovered {
+.header .logoBox .icon, .header .logoBox .iconHovered {
   position: absolute;
 }
-.header div .icon {
+.header .logoBox .icon {
   opacity: 1;
   transition: opacity 0.15s ease-in;
 }
-.header div .iconHovered {
+.header .logoBox .iconHovered {
   width: 44px;
   height: 44px;
   opacity: 0;
   transition: opacity 0.15s ease-in;
+}
+.header a:nth-child(2) img {
+  transition: transform 0.25s;
+  position: absolute;
+}
+.header a:nth-child(2) img:hover {
+  transform: scale(1, 1.35);
 }
 
 /* Screen */

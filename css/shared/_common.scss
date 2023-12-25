@@ -106,7 +106,7 @@ a {
 
     z-index: 10;
 
-    div {
+    .logoBox {
         position: relative;
 
         .icon, .iconHovered {
@@ -124,6 +124,15 @@ a {
 
             opacity: 0;
             @include opacityFade;
+        }
+    }
+
+    a:nth-child(2) img {
+        @include transformFade;
+        position: absolute;
+
+        &:hover {
+            transform: scale(1, 1.35);
         }
     }
 }
