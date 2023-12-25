@@ -497,6 +497,8 @@ body.works .screenBackground .centerBox .mainContentBox .bottomBox {
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .arrowButton {
   width: 16px;
   height: 32px;
+  opacity: 0.4;
+  transition: opacity 0.15s ease-in;
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .arrowButton:nth-child(1) {
   padding-right: 8px;
@@ -506,6 +508,7 @@ body.works .screenBackground .centerBox .mainContentBox .bottomBox .arrowButton:
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .arrowButton:hover {
   cursor: pointer;
+  opacity: 1;
 }
 body.works .screenBackground .centerBox .mainContentBox .bottomBox .contentBox {
   width: 67vw;

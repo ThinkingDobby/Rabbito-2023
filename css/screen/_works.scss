@@ -92,6 +92,9 @@ body.works {
                         width: 16px;
                         height: 32px;
 
+                        opacity: 0.4;
+                        @include opacityFade;
+
                         &:nth-child(1) {
                             padding-right: 8px;
                         }
@@ -102,6 +105,7 @@ body.works {
 
                         &:hover {
                             cursor: pointer;
+                            opacity: 1;
                         }
                     }
 
