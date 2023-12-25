@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const contentSections = document.getElementsByClassName("section")
     const titles = document.getElementsByClassName("textButton")
 
-    const whiteCirclePath = "../data/images/works/works_circle_white.png"
-    const grayCirclePath = "../data/images/works/works_circle_gray.png"
-
     const white = "#FEFEFE";
     const gray4 = "#8B8B8B";
 
@@ -48,18 +45,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 titles[selectedType].style.color = gray4;
                 titles[i].style.color = white;
 
-                circleButtons[clickedIndex].src = grayCirclePath;
+                circleButtons[clickedIndex].style.opacity = 0.5;
                 setContentHidden(clickedIndex);
 
                 circleButtonGroups[selectedType].style.display = "none";
                 circleButtonGroups[i].style.display = "flex";
 
                 if (i == 0) {   // 메인
-                    circleButtons[0].src = whiteCirclePath;
+                    circleButtons[0].style.opacity = 1;
                     setContentVisible(0);
                     clickedIndex = 0;
                 } else if (i == 1) {    // 서브
-                    circleButtons[firstGroupSize].src = whiteCirclePath;
+                    circleButtons[firstGroupSize].style.opacity = 1;
                     setContentVisible(firstGroupSize);
                     clickedIndex = firstGroupSize;
                 }
@@ -110,20 +107,20 @@ document.addEventListener("DOMContentLoaded", function() {
     // circleButton
     for (let i = 0; i < circleButtons.length; i++) {
         circleButtons[i].addEventListener("mouseover", function() {
-            circleButtons[i].src = whiteCirclePath;
+            circleButtons[i].style.opacity = 1;
         });
 
         circleButtons[i].addEventListener("mouseout", function() {
             if (i != clickedIndex) {
-                circleButtons[i].src = grayCirclePath;
+                circleButtons[i].style.opacity = 0.5;
             }
         });
 
         circleButtons[i].addEventListener("click", function() {
-            circleButtons[clickedIndex].src = grayCirclePath;
+            circleButtons[clickedIndex].style.opacity = 0.5;
             setContentHidden(clickedIndex);
 
-            circleButtons[i].src = whiteCirclePath;
+            circleButtons[i].style.opacity = 1;
             setContentVisible(i);
             clickedIndex = i;
         });

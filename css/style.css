@@ -164,7 +164,7 @@ a {
 .header div {
   position: relative;
 }
-.header div img {
+.header div .icon, .header div .iconHovered {
   position: absolute;
 }
 .header div .icon {
@@ -471,6 +471,11 @@ body.works .screenBackground .centerBox .mainContentBox .topBox .circleButtonBox
   width: 8px;
   height: 8px;
   padding: 8px;
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in;
+}
+body.works .screenBackground .centerBox .mainContentBox .topBox .circleButtonBox .buttonGroup .circleButton:nth-child(1) {
+  opacity: 1;
 }
 body.works .screenBackground .centerBox .mainContentBox .topBox .circleButtonBox .buttonGroup .circleButton:hover {
   cursor: pointer;

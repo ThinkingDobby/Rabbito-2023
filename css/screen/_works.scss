@@ -63,6 +63,13 @@ body.works {
                                 height: 8px;
 
                                 padding: 8px;
+                                opacity: 0.5;
+
+                                @include opacityFade;
+
+                                &:nth-child(1) {
+                                    opacity: 1;
+                                }
 
                                 &:hover {
                                     cursor: pointer;
