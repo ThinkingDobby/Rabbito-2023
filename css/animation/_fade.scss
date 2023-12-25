@@ -6,6 +6,10 @@
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
+@mixin opacityTransformFade() {
+    transition: opacity 0.3s, transform 0.3s;
+}
+
 @mixin colorFade() {
     transition: color 0.2s ease-in-out;
 }

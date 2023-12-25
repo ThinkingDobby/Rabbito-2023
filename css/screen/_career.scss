@@ -15,7 +15,7 @@ body.career {
                 display: flex;
                 justify-content: start;
 
-                width: $contentWidth / 2;
+                width: calc($contentWidth / 2);
                 height: 100vh;
                 position: fixed;
 
@@ -89,7 +89,7 @@ body.career {
             }
 
             .timelinePlaceholder {
-                width: $contentWidth / 2;
+                width: calc($contentWidth / 2);
             }
 
             .contentSection {
