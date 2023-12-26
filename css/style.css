@@ -154,6 +154,7 @@ a {
 }
 
 .header {
+  height: 10px;
   width: 67vw;
   margin-top: 64px;
   display: flex;
@@ -177,12 +178,108 @@ a {
   opacity: 0;
   transition: opacity 0.15s ease-in;
 }
-.header a:nth-child(2) img {
+.header .icon:nth-child(2) {
   transition: transform 0.25s;
   position: absolute;
+  right: 0;
 }
-.header a:nth-child(2) img:hover {
+.header .icon:nth-child(2):hover {
+  cursor: pointer;
   transform: scale(1, 1.35);
+}
+
+.cancelButtonBox {
+  width: 33.5vw;
+  left: 50%;
+  margin-top: 64px;
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  transition: transform 0.7s;
+  transform: translateX(120%);
+  height: 100px;
+  z-index: 12;
+}
+.cancelButtonBox .cancelIcon {
+  transition: transform 0.25s;
+  position: absolute;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  z-index: 12;
+}
+.cancelButtonBox .cancelIcon:hover {
+  cursor: pointer;
+  transform: scale(1, 1.3);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(49, 49, 49, 0.9490196078);
+  width: calc(16.5vw + 343px);
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  z-index: 11;
+  transition: transform 0.7s;
+  transform: translateX(100%);
+}
+.menu .topBox {
+  margin-top: 172px;
+  margin-left: 300px;
+}
+.menu .topBox .subTitleBox a {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding: 1.5px 0;
+  display: inline-block;
+  margin-bottom: 44px;
+}
+.menu .topBox .subTitleBox a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.3px;
+  background-color: #FEFEFE;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translate3d(-100%, 0, 0);
+}
+.menu .topBox .subTitleBox a:hover {
+  font-weight: 500;
+}
+.menu .topBox .subTitleBox a:hover::after {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.menu .bottomBox {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-left: 64px;
+  margin-bottom: 44px;
+}
+.menu .bottomBox .mailBox {
+  width: 220px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.menu .bottomBox .mailBox .mailIcon {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  padding-bottom: 2px;
+}
+.menu .bottomBox .copyRight {
+  display: inline-block;
 }
 
 /* Screen */

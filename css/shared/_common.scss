@@ -95,6 +95,7 @@ a {
 }
 
 .header {
+    height: 10px;
     width: $contentWidth;
 
     margin-top: 64px;
@@ -127,13 +128,114 @@ a {
         }
     }
 
-    a:nth-child(2) img {
+    .icon:nth-child(2) {
         @include transformFade;
         position: absolute;
+        right: 0;
 
         &:hover {
+            cursor: pointer;
             transform: scale(1, 1.35);
         }
     }
 }
 
+.cancelButtonBox {
+    width: calc($contentWidth / 2);
+
+    left: 50%;
+
+    margin-top: 64px;
+
+    display: flex;
+
+    justify-content: end;
+
+    position: fixed;
+
+    @include transformFadeSlow;
+    transform: translateX(120%);
+    height: 100px;
+    z-index: 12;
+
+    .cancelIcon {
+        @include transformFade;
+
+        position: absolute;
+        right: 0;
+
+        width: 44px;
+        height: 44px;
+
+        z-index: 12;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1, 1.3);
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: $gray5;
+    width: calc((100vw - $contentWidth) / 2 + 343px);
+    height: 100vh;
+
+    position: fixed;
+    right: 0;
+
+    z-index: 11;
+
+    @include transformFadeSlow;
+    transform: translateX(100%);
+
+    .topBox {
+
+        margin-top: 172px;
+        margin-left: 300px;
+        
+        .subTitleBox {
+            a {
+                @include leftFadeLine; 
+                display: inline-block;
+
+                margin-bottom: 44px;
+            }
+        }
+    }
+
+    .bottomBox {
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        
+
+        margin-left: 64px;
+        margin-bottom: 44px;
+    
+        .mailBox {
+            width: 220px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            margin-bottom: 32px;
+
+            .mailIcon {
+                width: 32px;
+                height: 32px;
+
+                margin-right: 8px;
+                padding-bottom: 2px;
+            }
+        }
+
+        .copyRight {
+            display: inline-block;
+        }
+    }
+}
