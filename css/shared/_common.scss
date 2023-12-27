@@ -155,7 +155,6 @@ a {
 
     @include transformFadeSlow;
     transform: translateX(120%);
-    height: 100px;
     z-index: 12;
 
     .cancelIcon {

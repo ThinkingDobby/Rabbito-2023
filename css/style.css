@@ -197,7 +197,6 @@ a {
   position: fixed;
   transition: transform 0.7s;
   transform: translateX(120%);
-  height: 100px;
   z-index: 12;
 }
 .cancelButtonBox .cancelIcon {
