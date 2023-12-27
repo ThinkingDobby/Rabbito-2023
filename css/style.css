@@ -81,20 +81,20 @@ a {
 
 /* Text Type */
 .basicText {
-  font-family: "Pretendard Variable, sans-serif";
+  font-family: "Pretendard Variable", sans-serif;
   font-size: 16px;
   color: #FEFEFE;
 }
 
 .smallText {
-  font-family: "Pretendard Variable, sans-serif";
+  font-family: "Pretendard Variable", sans-serif;
   font-size: 14px;
   color: #AEAEAE;
   line-height: 150%;
 }
 
 .subTitle {
-  font-family: "Pretendard Variable, sans-serif";
+  font-family: "Pretendard Variable", sans-serif;
   font-size: 20px;
   color: #FEFEFE;
 }
@@ -108,7 +108,7 @@ a {
   cursor: pointer;
 }
 .linkText a span, .linkText .a span {
-  font-family: "Pretendard Variable, sans-serif";
+  font-family: "Pretendard Variable", sans-serif;
   font-size: 14px;
   color: #FAF0DC;
 }
